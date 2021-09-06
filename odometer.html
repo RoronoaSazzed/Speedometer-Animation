@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odometer Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #meter-gauge {
+        transform-box: fill-box;
+        transform-origin: center bottom;
+        animation: meterRotate 10s ease-in-out infinite alternate forwards;
+      }
+
+      @keyframes meterRotate {
+        from {
+          transform: rotate(-135deg);
+        }
+
+        100% {
+          transform: rotate(135deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <svg
+        width="600"
+        height="600"
+        viewBox="0 0 600 600"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="odometer">
+          <g id="big-gauge">
+            <path
+              id="Vector"
+              d="M395.132 102.116L383.501 130.181L387.201 131.712L398.832 103.647L395.132 102.116Z"
+              fill="black"
+            />
+            <path
+              id="Vector_2"
+              d="M140.946 493.1L119.454 514.58L122.286 517.41L143.777 495.93L140.946 493.1Z"
+              fill="black"
+            />
+            <path
+              id="Vector_3"
+              d="M477.761 156.322L456.27 177.802L459.101 180.632L480.592 159.152L477.761 156.322Z"
+              fill="black"
+            />
+            <path
+              id="Vector_4"
+              d="M93.2515 420.326L65.1721 431.951L66.7044 435.648L94.7839 424.023L93.2515 420.326Z"
+              fill="black"
+            />
+            <path
+              id="Vector_5"
+              d="M533.349 238.004L505.272 249.633L506.805 253.331L534.882 241.701L533.349 238.004Z"
+              fill="black"
+            />
+            <path
+              id="Vector_6"
+              d="M77.0145 334.914H46.6215V338.916H77.0145V334.914Z"
+              fill="black"
+            />
+            <path
+              id="Vector_7"
+              d="M553.425 334.815H523.032V338.818H553.425V334.815Z"
+              fill="black"
+            />
+            <path
+              id="Vector_8"
+              d="M66.6576 238.136L65.1252 241.833L93.2047 253.458L94.7371 249.761L66.6576 238.136Z"
+              fill="black"
+            />
+            <path
+              id="Vector_9"
+              d="M506.836 420.258L505.303 423.955L533.383 435.58L534.915 431.882L506.836 420.258Z"
+              fill="black"
+            />
+            <path
+              id="Vector_10"
+              d="M122.226 156.4L119.394 159.23L140.885 180.71L143.717 177.88L122.226 156.4Z"
+              fill="black"
+            />
+            <path
+              id="Vector_11"
+              d="M459.161 493.022L456.33 495.852L477.821 517.331L480.653 514.501L459.161 493.022Z"
+              fill="black"
+            />
+            <path
+              id="Vector_12"
+              d="M204.86 102.126L201.161 103.658L212.792 131.722L216.491 130.191L204.86 102.126Z"
+              fill="black"
+            />
+            <path
+              id="Vector_13"
+              d="M301.976 83.5961H297.972V97.6456V113.973H301.976V83.5961Z"
+              fill="black"
+            />
+          </g>
+          <g id="range-gauge">
+            <path
+              id="Vector_14"
+              d="M300.023 407.493C339.05 407.493 370.687 375.872 370.687 336.866C370.687 297.86 339.05 266.239 300.023 266.239C260.997 266.239 229.359 297.86 229.359 336.866C229.359 375.872 260.997 407.493 300.023 407.493Z"
+              fill="black"
+            />
+          </g>
+          <g id="fuel-gauge">
+            <path
+              id="Vector_15"
+              d="M300.023 461.048C277.078 461.074 254.579 454.71 235.051 442.669L223.516 454.198C246.277 469.062 272.88 476.974 300.069 476.965C327.258 476.955 353.855 469.025 376.606 454.144L365.079 442.624C345.53 454.692 323.001 461.072 300.023 461.048V461.048Z"
+              fill="black"
+            />
+          </g>
+          <g id="meter-gauge">
+            <path
+              id="Vector_16"
+              d="M302.546 76.0018H297.493V336.866H302.546V76.0018Z"
+              fill="black"
+            />
+          </g>
+          <g id="small-gauge">
+            <path
+              id="Vector_17"
+              d="M318.715 99.5213L319.908 84.3783"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_18"
+              d="M337.285 101.716L339.663 86.7174"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_19"
+              d="M355.635 105.361L359.176 90.5905"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_20"
+              d="M373.635 110.434L378.331 95.99"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_21"
+              d="M408.169 124.734L415.068 111.201"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_22"
+              d="M424.483 133.87L432.423 120.914"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_23"
+              d="M440.036 144.252L448.972 131.964"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_24"
+              d="M454.724 155.825L464.594 144.275"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_25"
+              d="M107.331 501.351L118.888 491.485"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_26"
+              d="M481.158 182.246L492.715 172.381"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_27"
+              d="M95.0147 485.737L107.309 476.806"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_28"
+              d="M492.738 196.926L505.032 187.995"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_29"
+              d="M83.9592 469.196L96.9218 461.26"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_30"
+              d="M503.124 212.471L516.087 204.535"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_31"
+              d="M74.2411 451.851L87.7812 444.955"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_32"
+              d="M512.265 228.776L525.805 221.881"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_33"
+              d="M59.0218 415.133L73.4737 410.439"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_34"
+              d="M526.573 263.292L541.025 258.599"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_35"
+              d="M53.6194 395.987L68.398 392.448"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_36"
+              d="M531.648 281.283L546.427 277.744"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_37"
+              d="M49.7443 376.485L64.7509 374.108"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_38"
+              d="M535.296 299.623L550.302 297.246"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_39"
+              d="M47.4041 356.74L62.555 355.548"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_40"
+              d="M537.491 318.184L552.642 316.991"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_41"
+              d="M47.4041 316.991L62.555 318.184"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_42"
+              d="M537.491 355.548L552.642 356.74"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_43"
+              d="M49.7443 297.246L64.7509 299.623"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_44"
+              d="M535.296 374.108L550.302 376.485"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_45"
+              d="M53.6194 277.744L68.398 281.283"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_46"
+              d="M531.648 392.448L546.427 395.987"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_47"
+              d="M59.0218 258.599L73.4737 263.292"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_48"
+              d="M526.573 410.439L541.025 415.133"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_49"
+              d="M74.2411 221.881L87.7812 228.776"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_50"
+              d="M512.265 444.955L525.805 451.851"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_51"
+              d="M83.9592 204.535L96.9218 212.471"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_52"
+              d="M503.124 461.26L516.087 469.196"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_53"
+              d="M95.0147 187.995L107.309 196.926"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_54"
+              d="M492.738 476.806L505.032 485.737"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_55"
+              d="M107.331 172.381L118.888 182.246"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_56"
+              d="M481.158 491.485L492.715 501.351"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_57"
+              d="M135.453 144.275L145.323 155.825"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_58"
+              d="M151.075 131.964L160.01 144.252"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_59"
+              d="M167.624 120.914L175.564 133.87"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_60"
+              d="M184.978 111.201L191.877 124.734"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_61"
+              d="M221.716 95.99L226.411 110.434"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_62"
+              d="M240.871 90.5905L244.412 105.361"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_63"
+              d="M260.383 86.7174L262.761 101.716"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+            <path
+              id="Vector_64"
+              d="M280.139 84.3783L281.331 99.5213"
+              stroke="black"
+              stroke-width="3"
+              stroke-miterlimit="10"
+            />
+          </g>
+          <g id="outer-border">
+            <path
+              id="Vector_65"
+              d="M42.822 336.866C42.822 195.118 158.202 79.7989 300.023 79.7989C441.844 79.7989 557.224 195.118 557.224 336.866C557.239 371.019 550.424 404.83 537.18 436.314C523.936 467.798 504.529 496.318 480.101 520.199L482.875 522.964C483.43 522.417 483.999 521.878 484.554 521.323C521.056 484.841 545.914 438.36 555.985 387.757C566.056 337.154 560.887 284.703 541.133 237.036C521.379 189.369 487.925 148.628 445.004 119.964C402.083 91.2995 351.621 76 300 76C248.379 76 197.917 91.2995 154.996 119.964C112.075 148.628 78.6217 189.369 58.8673 237.036C39.1129 284.703 33.9444 337.154 44.0153 387.757C54.0863 438.36 78.9444 484.841 115.446 521.323C116.008 521.893 116.593 522.44 117.163 523.002L119.937 520.23C95.5057 496.345 76.0984 467.819 62.8555 436.33C49.6126 404.841 42.8013 371.024 42.822 336.866V336.866Z"
+              fill="black"
+            />
+          </g>
+          <g id="fuelIcon">
+            <path
+              id="Vector_66"
+              d="M309.141 415.846L291.468 433.511V436.678H299.476L290.905 453.818L308.055 436.678V433.511H300.304L309.141 415.846Z"
+              fill="black"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+  </body>
+</html>
